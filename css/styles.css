@@ -1,0 +1,263 @@
+body {
+  background-color: #17181a;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+header img {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  padding-bottom: 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 40px;
+  transition: 300ms;
+}
+header a:hover {
+  color: #db620f;
+  transition: 300ms;
+}
+header nav img {
+  display: none;
+}
+hr {
+  border: none;
+  border-top: 1px solid #fff;
+  height: 0;
+}
+#menu {
+  display: none;
+  background-color: #ffffffee;
+  z-index: 100;
+  right: 0;
+  height: 100%;
+  border-radius: 50px;
+}
+#menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.Home {
+  text-decoration: underline;
+}
+header button {
+  font-size: 20px;
+  background-color: transparent;
+  color: #db620f;
+  border: #db620f 1px solid;
+  cursor: pointer;
+  transition: 300ms;
+}
+header button:hover {
+  background-color: #db620f;
+  color: #17181a;
+  transition: 300ms;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 90px 150px;
+}
+.title h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+.title button {
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  background: #ffffffba;
+  border: 1px solid #db620f;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #17181a;
+  font-weight: 700;
+  margin: 0px 60px;
+  transition: 300ms;
+}
+main {
+  display: flex;
+}
+
+main img {
+  width: 364px;
+  height: 407px;
+  margin: 50px 0px 0px 250px;
+  transition: 300ms;
+}
+
+.title button:hover {
+  background-color: #db620f;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second img {
+  width: 600px;
+  height: 600px;
+  margin: 100px 30px;
+}
+.about {
+  margin: 0px 120px;
+}
+.about h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 144px;
+  color: #fff;
+  text-align: center;
+}
+
+.about p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reco {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 144px;
+  color: #fff;
+  text-align: center;
+}
+.see {
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  background: #ffffffba;
+  border: 1px solid #db620f;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #17181a;
+  font-weight: 700;
+  transition: 300ms;
+}
+.see:hover {
+  background-color: #db620f;
+  color: #17181a;
+  transition: 300ms;
+}
+
+.more {
+  float: right;
+  margin: 30px;
+}
+
+.ramadan {
+  cursor: pointer;
+  text-align: left;
+  color: #fff;
+  font-size: 22px;
+  margin: 15px 140px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recette {
+  margin: 10px;
+}
+.list img,
+.list h3 {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 300px;
+  background-color: #a5552d;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+footer p {
+  margin: 20px;
+}
+footer a img {
+  margin: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+/* dans les tablettes et les telephones */
+@media screen and (max-width: 992px) {
+  header nav img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+  header nav a {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header {
+    padding: 20px 0px;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .title {
+    margin: auto;
+  }
+
+  .second img {
+    width: 90%;
+    height: 90%;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .list {
+    flex-direction: column;
+  }
+  .reco {
+    font-size: 40px;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chef {
+    margin-left: auto;
+  }
+}

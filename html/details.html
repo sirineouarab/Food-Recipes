@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style3.css" />
+    <title>Recette</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="pics/logo.png" /></a>
+      <nav>
+        <a href="index.html" class="Home">Home</a>
+        <a href="catalogue.html" class="Catalog">Catalog</a>
+        <a href="#footer">Contact us</a>
+        <img onclick="menu()" src="pics/burger-menu.png" />
+      </nav>
+      <button>Sign in</button>
+    </header>
+
+    <!-- Le menu qu'on va afficher en telephone -->
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalog</a>
+      <a href="#footer" onclick="contact()">Contact us</a>
+    </div>
+    <!-- separation entre navbar et le reste de la page -->
+    <hr />
+    <h1 id="titre"></h1>
+    <main>
+      <img id="main" />
+      <div>
+        <h2>Information</h2>
+        <p id="name">name:</p>
+        <p id="cat">category:</p>
+        <p id="cout">country:</p>
+        <p id="dur">duration:</p>
+      </div>
+    </main>
+
+    <section class="ing">
+      <h2>ingredients</h2>
+
+      <p id="ing"></p>
+    </section>
+    <br />
+    <section class="inst">
+      <h2>Instructions</h2>
+
+      <p id="ins"></p>
+    </section>
+    <section class="img">
+      <img id="img1" />
+      <img id="img2" />
+      <img id="img3" />
+    </section>
+
+    <section class="rating">
+      <img id="star1" src="pics/StarOutline.png" />
+      <img id="star2" src="pics/StarOutline.png" />
+      <img id="star3" src="pics/StarOutline.png" />
+      <img id="star4" src="pics/StarOutline.png" />
+      <img id="star5" src="pics/StarOutline.png" />
+    </section>
+    <h2 id="global">Current Rating : <span id="gloablRate"></span></h2>
+
+    <!-- comments section -->
+    <section class="new">
+      <input id="write" placeholder="Write A Comment.." />
+    </section>
+
+    <section id="comments"></section>
+
+    <footer id="footer">
+      <p>
+        Thank you for visiting our website! We are thrilled to have you here and
+        hope you have found everything you were looking for. We are committed to
+        providing you with the best possible user experience, and we hope that
+        our website has met your expectations.
+      </p>
+      <h3>Contact Us</h3>
+      <div class="social">
+        <a href="#"><img src="pics/email.png" /></a>
+        <a href="#"><img src="pics/insta.png" /></a>
+        <a href="#"><img src="pics/fb.png" /></a>
+      </div>
+    </footer>
+    <script src="../js/recettesDB.js"></script>
+    <script src="../js/script3.js"></script>
+  </body>
+</html>

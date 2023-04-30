@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style2.css" />
+    <title>Catalog</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="pics/logo.png" /></a>
+      <nav>
+        <a href="index.html" class="Home">Home</a>
+        <a href="catalogue.html" class="Catalog">Catalog</a>
+        <a href="#footer">Contact us</a>
+        <img onclick="menu()" src="pics/burger-menu.png" />
+      </nav>
+      <button>Sign in</button>
+    </header>
+
+    <!-- Le menu qu'on va afficher en telephone -->
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalog</a>
+      <a href="#footer" onclick="contact()">Contact us</a>
+    </div>
+    <hr />
+    <div class="search-bar">
+      <input type="text" placeholder="Search" id="search" />
+      <ion-icon name="search-outline" class="icon" />
+    </div>
+    <section class="titre">
+      <div id="catego">Category : All</div>
+      <div>
+        <select name="categories" id="categories">
+          <option selected>All</option>
+          <option>Petit déjeuner</option>
+          <option>Déjeuner</option>
+          <option>Dîner</option>
+          <option>Plat principal</option>
+          <option>Entrée</option>
+          <option>Plat</option>
+        </select>
+      </div>
+    </section>
+    <section class="list">
+      <!-- On va afficher ici les recettes par java script -->
+    </section>
+    <div class="pages">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>..</button>
+      <button>></button>
+    </div>
+
+    <footer id="footer">
+      <p>
+        Thank you for visiting our website! We are thrilled to have you here and
+        hope you have found everything you were looking for. We are committed to
+        providing you with the best possible user experience, and we hope that
+        our website has met your expectations.
+      </p>
+      <h3>Contact Us</h3>
+      <div class="social">
+        <a href="#"><img src="pics/email.png" /></a>
+        <a href="#"><img src="pics/insta.png" /></a>
+        <a href="#"><img src="pics/fb.png" /></a>
+      </div>
+    </footer>
+
+    <script src="../js/recettesDB.js"></script>
+    <script src="../js/script2.js"></script>
+  </body>
+</html>
